@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,UAAU,CACN,WAAW,CAAE,MAAM,CACnB,GAAG,CAAE,yCAAyC,CAAC,kBAAkB,CAGrE,AAAA,CAAC,AAAC,CACE,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACtB,WAAW,CAAE,MAAM,CACtB,AAED,AAAA,IAAI,AAAC,CACD,SAAS,CAAE,IAAI,CAClB,AGdD,AAAA,eAAe,AAAC,CACZ,MAAM,CAAE,IAAI,CACZ,OAAO,CFDG,IAAI,CECQ,IAAgB,CACtC,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,GAAG,CAAC,KAAK,CFAT,IAAI,CECZ,aAAa,CAAE,GAAG,CAClB,gBAAgB,CFFR,IAAI,CEGZ,UAAU,CAAE,+CAA+C,CAC3D,KAAK,CFAK,IAAI,CECd,MAAM,CAAE,OAAO,CAQlB,AAjBD,AAWI,eAXW,AAWV,MAAM,AAAC,CACJ,gBAAgB,CFJV,IAAI,CEKV,KAAK,CFTD,IAAI,CEUX,AAdL,ADgBI,eChBW,ADgBV,MAAM,AAAC,CACJ,aAAa,CAAE,IAAI,CACnB,cAAc,CAAE,GAAG,CACnB,aAAa,CAAE,GAAG,CACrB",
+    "sources": [
+        "../styles/style.scss",
+        "../styles/basic/_reset.scss",
+        "../styles/basic/_variables.scss",
+        "../styles/functions/_mixins.scss",
+        "../styles/basic/_basic-styles.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

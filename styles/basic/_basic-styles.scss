@@ -1,0 +1,18 @@
+.button-default {
+    margin: 20px;
+    padding: $bsc-padding $bsc-padding * 2;
+    font-size: 1.6rem;
+    border: 1px solid $black-bgc;
+    border-radius: 5px;
+    background-color: $black-bgc;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    color: $white-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $white-color;
+        color: $black-bgc;
+    }
+
+    @include addFocus();
+}
