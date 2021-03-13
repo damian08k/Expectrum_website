@@ -14,5 +14,5 @@
         color: $black-bgc;
     }
 
-    @include addFocus();
+    @include addFocus(2px);
 }
