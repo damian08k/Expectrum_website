@@ -1,7 +1,7 @@
 .menu {
     flex-basis: 100%;
     margin: 3px 0 0 auto;
-    height: 100vh;
+    height: calc(100vh - 75px);
     background-color: $white-color;
     transition: transform 0.3s linear, visibility 0.3s linear;
     transform: translateX(100%);
@@ -10,6 +10,10 @@
     @include mediaQuery(mobileSmall) {
         flex-basis: 400px;
         border-left: 2px solid $black-color;
+    }
+
+    @media (max-width: 1024px) and (orientation: landscape) {
+        overflow-y: scroll;
     }
 
     &--show-menu {
