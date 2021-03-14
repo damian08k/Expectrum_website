@@ -1,0 +1,44 @@
+.menu {
+    flex-basis: 100%;
+    margin: 3px 0 0 auto;
+    height: 100vh;
+    background-color: $white-color;
+    transition: transform 0.3s linear, visibility 0.3s linear;
+    transform: translateX(100%);
+    visibility: hidden;
+
+    @include mediaQuery(mobileSmall) {
+        flex-basis: 400px;
+        border-left: 2px solid $black-color;
+    }
+
+    &--show-menu {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__element {
+        text-align: center;
+
+        &:last-child {
+            background-color: rgba(255, 255, 0, 0.51);
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: $bsc-padding * 2 0;
+        font-size: 1.7rem;
+        border-bottom: 1px solid rgb(182, 179, 179);
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black-color;
+        cursor: pointer;
+
+        @include addFocus(1px);
+    }
+}

@@ -1,0 +1,42 @@
+.hamburger {
+    position: relative;
+    margin-right: $bsc-margin;
+    width: 4rem;
+    height: 3.5rem;
+    border: none;
+    border-top: 5px solid $black-color;
+    background-color: transparent;
+    transition: border-width 0.1s linear;
+    cursor: pointer;
+    @include addFocus(5px);
+
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4rem;
+        border-top: 5px solid $black-color;
+        transition: transform 0.2s linear;
+        transform: translateY(10px);
+    }
+
+    &::before {
+        transform: translateY(25px);
+        transform-origin: left;
+    }
+
+    &--open-burger {
+        border-width: 0;
+
+        &::before {
+            transform: rotate(45deg) translateX(5px) translateY(-5px);
+        }
+
+        &::after {
+            transform: rotate(-45deg) translateX(-10px) translateY(10px);
+        }
+    }
+}

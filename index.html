@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expertum website</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-
-    <script src="./js/script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Expertum website</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo logo-container">
+                <h1 class="logo">
+                    <a href="#" class="logo__link">
+                        <img src="./assets/images/logo-dark.png" alt="Expertum website logo" class="logo__image" />
+                    </a>
+                </h1>
+            </div>
+            <div class="hamburger-container">
+                <button class="hamburger" aria-label="Open/Close menu" aria-expanded="false" data-burger></button>
+            </div>
+            <nav class="menu" data-menu>
+                <ul class="menu__list">
+                    <li class="menu__element">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__element">
+                        <a href="#" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__element">
+                        <a href="#" class="menu__link">Services</a>
+                    </li>
+                    <li class="menu__element">
+                        <a href="#" class="menu__link">Pricing</a>
+                    </li>
+                    <li class="menu__element">
+                        <a href="#" class="menu__link">Blog</a>
+                    </li>
+                    <li class="menu__element">
+                        <a href="#" class="menu__link">Contact</a>
+                    </li>
+                    <li class="menu__element">
+                        <a href="#" class="menu__link">WP Version</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
