@@ -4,7 +4,7 @@
         $key: $breakpoint,
     );
 
-    @if ($background-size) {
+    @if ($breakpoint-size) {
         @media #{$breakpoint-size} {
             @content;
         }
