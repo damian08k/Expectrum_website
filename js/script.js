@@ -5,6 +5,8 @@ const handleBurgerClick = () => {
     changeOpenCloseBurger();
     changeAriaExpandedAttr();
     showHideMenu();
+    addTransitionClassToMenu();
+    addTransitionendEventToMenu();
 };
 
 const changeOpenCloseBurger = () => {
@@ -25,6 +27,22 @@ const changeAriaExpandedAttr = () => {
     } else if (ariaExpandedBtnAttr === "true") {
         burgerButton.setAttribute(ariaExpanded, "false");
     }
+};
+
+const addTransitionClassToMenu = () => {
+    menuNavElement.classList.add("menu--transition");
+};
+
+const removeTransitionClassFromMenu = () => {
+    menuNavElement.classList.remove("menu--transition");
+};
+
+const addTransitionendEventToMenu = () => {
+    menuNavElement.addEventListener("transitionend", handleTransitionend);
+};
+
+const handleTransitionend = () => {
+    removeTransitionClassFromMenu();
 };
 
 burgerButton.addEventListener("click", handleBurgerClick);
