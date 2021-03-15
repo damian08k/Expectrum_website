@@ -3,9 +3,17 @@
     align-items: center;
     flex-basis: 50%;
     height: 100%;
+
+    @include mediaQuery(mobileLarge) {
+        flex-basis: 20%;
+    }
 }
 
 .hamburger-container {
     flex-basis: 40%;
     text-align: right;
+
+    @include mediaQuery(mobileLarge) {
+        display: none;
+    }
 }
