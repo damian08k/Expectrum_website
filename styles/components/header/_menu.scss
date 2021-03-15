@@ -1,0 +1,97 @@
+.menu {
+    flex-basis: 100%;
+    margin: 3px 0 0 auto;
+    height: calc(100vh - 75px);
+    background-color: $white-color;
+    transform: translateX(100%);
+    visibility: hidden;
+
+    &--transition {
+        transition: transform 0.3s linear, visibility 0.3s linear;
+    }
+
+    @include mediaQuery(mobileSmall) {
+        flex-basis: 400px;
+        border-left: 2px solid $black-color;
+    }
+
+    @media (max-width: 1024px) and (orientation: landscape) {
+        overflow-y: scroll;
+    }
+
+    @include mediaQuery(mobileLarge) {
+        flex-basis: 70%;
+        margin: 0;
+        padding-right: $bsc-padding;
+        height: 100%;
+        max-width: 800px;
+        border-left: none;
+        transform: translateX(0);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    &--show-menu {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    &__list {
+        list-style: none;
+
+        @include mediaQuery(mobileLarge) {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__element {
+        text-align: center;
+
+        &:last-child {
+            background-color: rgba(255, 255, 0, 0.51);
+        }
+
+        @include mediaQuery(mobileLarge) {
+            @include addFlex();
+            padding: 0 $bsc-padding;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: $bsc-padding * 2 0;
+        font-size: 1.7rem;
+        border-bottom: 1px solid rgb(182, 179, 179);
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black-color;
+        cursor: pointer;
+
+        @include addFocus(1px);
+
+        @include mediaQuery(mobileLarge) {
+            border-bottom: none;
+            color: inherit;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: transparent;
+                transition: width 0.2s linear, background-color 0.2s linear;
+            }
+
+            &:hover {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    background-color: $black-color;
+                }
+            }
+        }
+    }
+}

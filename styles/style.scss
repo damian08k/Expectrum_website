@@ -3,3 +3,9 @@
 @import "./functions/mixins";
 
 @import "./basic/basic-styles";
+
+@import "./components/header/header";
+@import "./components/header/header-containers";
+@import "./components/header/logo";
+@import "./components/header/menu";
+@import "./components/header/hamburger";

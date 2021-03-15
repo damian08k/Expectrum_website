@@ -4,7 +4,7 @@
         $key: $breakpoint,
     );
 
-    @if ($background-size) {
+    @if ($breakpoint-size) {
         @media #{$breakpoint-size} {
             @content;
         }
@@ -13,10 +13,10 @@
     }
 }
 
-@mixin addFocus {
+@mixin addFocus($outline-offset) {
     &:focus {
         outline-color: #f00;
-        outline-offset: 5px;
+        outline-offset: #{$outline-offset};
         outline-width: 2px;
     }
 }
