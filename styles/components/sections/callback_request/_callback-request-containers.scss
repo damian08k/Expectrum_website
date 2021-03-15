@@ -1,0 +1,21 @@
+.callback-request-form-container {
+    margin: $bsc-margin * 5 0 0;
+}
+
+.callback-request-star-container {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: black;
+
+    @include addFlex();
+}
+
+.callback-request-form-elements-container {
+    @include addFlex();
+    flex-wrap: wrap;
+}

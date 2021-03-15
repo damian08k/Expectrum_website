@@ -1,0 +1,52 @@
+.callback-request {
+    padding: $bsc-padding * 16 $bsc-padding;
+    background-image: url("https://picsum.photos/1280/720?random=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--add-opacity {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &--add-special-padding {
+        padding: $bsc-padding * 1.5;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white-color;
+    }
+
+    &__star {
+        width: 70%;
+        height: 70%;
+        fill: white;
+    }
+
+    &__form {
+        position: relative;
+        background-color: $white-color;
+    }
+
+    &__form-input {
+        padding: $bsc-padding;
+        width: 80%;
+        border: 1px solid $black-color;
+        border-radius: 5px;
+
+        &:nth-of-type(1) {
+            margin-top: $bsc-margin * 5;
+        }
+
+        &:nth-of-type(2) {
+            margin: $bsc-margin * 2 0;
+        }
+    }
+
+    &__form-submit-btn {
+        width: 80%;
+    }
+}
