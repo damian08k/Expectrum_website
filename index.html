@@ -51,7 +51,7 @@
                     <div class="callback-request--add-opacity callback-request--add-special-padding">
                         <h2 class="callback-request__heading">Choose your experts for the best plan you can get</h2>
                         <div class="callback-request-form-container">
-                            <form class="callback-request__form">
+                            <form class="callback-request__form" data-form="callback-request">
                                 <div class="callback-request-star-container">
                                     <img
                                         src="./assets/images/star.svg"
@@ -64,11 +64,31 @@
                                         type="text"
                                         class="callback-request__form-input"
                                         placeholder="Name *"
-                                        title="Put your name here"
+                                        aria-label="Put your name here"
+                                        minlength="0"
                                         maxlength="15"
+                                        data-input="form-callback-request"
+                                        required
                                     />
-                                    <input type="email" class="callback-request__form-input" placeholder="E-mail *" />
-                                    <input type="tel" class="callback-request__form-input" placeholder="Phone *" />
+                                    <input
+                                        type="email"
+                                        class="callback-request__form-input"
+                                        placeholder="E-mail *"
+                                        aria-label="Put your e-mail address here"
+                                        data-input="form-callback-request"
+                                        required
+                                    />
+                                    <input
+                                        type="tel"
+                                        class="callback-request__form-input"
+                                        placeholder="Phone *"
+                                        aria-label="Put your phone number here"
+                                        pattern="\d*"
+                                        minlength="9"
+                                        maxlength="12"
+                                        data-input="form-callback-request"
+                                        required
+                                    />
                                     <button type="submit" class="callback-request__form-submit-btn button-default">
                                         Request a callback
                                     </button>
@@ -79,6 +99,8 @@
                 </div>
             </section>
         </main>
-        <script src="./js/script.js"></script>
+
+        <script src="./js/script.js" defer></script>
+        <script src="./js/forms.js" defer></script>
     </body>
 </html>
