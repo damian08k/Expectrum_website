@@ -1,9 +1,14 @@
 .callback-request {
-    padding: $bsc-padding * 16 $bsc-padding;
-    background-image: url("https://picsum.photos/1280/720?random=0");
+    @include addFlex();
+    height: 600px;
+    background-image: url("../../../../assets/images/mobile_s1_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include mediaQuery(mobileLarge) {
+        background-image: url("../../../../assets/images/desktop_s1_bg.jpg");
+    }
 
     &--add-opacity {
         background-color: rgba(0, 0, 0, 0.5);
@@ -11,6 +16,10 @@
 
     &--add-special-padding {
         padding: $bsc-padding * 1.5;
+    }
+
+    &__container {
+        padding-top: 75px;
     }
 
     &__heading {
