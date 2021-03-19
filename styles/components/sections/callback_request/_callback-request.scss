@@ -15,7 +15,7 @@
     }
 
     &--add-special-padding {
-        padding: $bsc-padding * 1.5;
+        padding: $bsc-padding * 2.5;
     }
 
     &__container {
@@ -23,10 +23,16 @@
     }
 
     &__heading {
+        margin: 0 auto;
+        max-width: 500px;
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
         color: $white-color;
+
+        @include mediaQuery(mobileXMedium) {
+            font-size: 3rem;
+        }
     }
 
     &__star {
@@ -37,6 +43,8 @@
 
     &__form {
         position: relative;
+        margin: 0 auto;
+        max-width: 500px;
         background-color: $white-color;
     }
 
