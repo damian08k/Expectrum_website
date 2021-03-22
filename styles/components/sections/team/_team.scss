@@ -1,0 +1,9 @@
+.team {
+    @include addFlex();
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__teammate {
+        flex-basis: 100%;
+    }
+}
