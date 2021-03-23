@@ -11,6 +11,7 @@
         background-color: rgba($black-color, 0.2);
         transition: background-color 0.2s linear;
         cursor: pointer;
+        @include addFocus(1px);
 
         &:hover {
             background-color: rgba($white-color, 0.2);
