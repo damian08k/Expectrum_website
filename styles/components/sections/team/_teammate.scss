@@ -1,0 +1,29 @@
+.teammate {
+    color: $white-color;
+
+    &:first-child,
+    &:last-child {
+        background-color: $black-bgc;
+    }
+
+    &:nth-child(2) {
+        background-color: $blue-green-bgc;
+    }
+
+    &__name,
+    &__position {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__name {
+        padding-top: $bsc-padding * 2;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    &__position {
+        padding: $bsc-padding * 2 0 $bsc-padding;
+        font-size: 1.5rem;
+    }
+}
