@@ -5,5 +5,9 @@
 
     &__teammate {
         flex-basis: 100%;
+
+        @include mediaQuery(mobileXMedium) {
+            flex-basis: 33.33%;
+        }
     }
 }
