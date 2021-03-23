@@ -6,6 +6,7 @@
 
     &__background {
         @include addFlex();
+        @include addFocus(1px);
         width: 35px;
         height: 35px;
         background-color: rgba($black-color, 0.2);
