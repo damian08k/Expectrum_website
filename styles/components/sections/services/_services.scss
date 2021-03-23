@@ -1,7 +1,11 @@
 .services {
-    @include addFlex();
-    margin: $bsc-margin * 3 0;
+    margin: $bsc-margin * 5 0;
     width: 100%;
+
+    &__content {
+        @include addFlex();
+        flex-wrap: wrap;
+    }
 
     &__heading {
         flex-basis: 100%;
@@ -21,6 +25,13 @@
     }
 
     &__service {
-        flex-basis: 100%;
+        width: 100%;
+    }
+
+    @include mediaQuery(mobileXMedium) {
+        &__left-column,
+        &__right-column {
+            width: 45%;
+        }
     }
 }
