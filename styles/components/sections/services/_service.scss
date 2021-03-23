@@ -1,0 +1,15 @@
+.service {
+    padding: 0 $bsc-padding;
+
+    &__name {
+        font-size: 2.5rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    &__description {
+        padding: $bsc-margin * 2 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

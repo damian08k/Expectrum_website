@@ -1,0 +1,26 @@
+.services {
+    @include addFlex();
+    margin: $bsc-margin * 3 0;
+    width: 100%;
+
+    &__heading {
+        flex-basis: 100%;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: $bsc-margin * 2 auto;
+            width: 50px;
+            height: 3px;
+            background-color: $blue-green-bgc;
+        }
+    }
+
+    &__service {
+        flex-basis: 100%;
+    }
+}
