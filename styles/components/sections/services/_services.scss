@@ -1,0 +1,55 @@
+.services {
+    margin: $bsc-margin * 5 0;
+    width: 100%;
+
+    &__content {
+        @include addFlex();
+        flex-wrap: wrap;
+    }
+
+    &__heading {
+        flex-basis: 100%;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: $bsc-margin * 2 auto;
+            width: 50px;
+            height: 3px;
+            background-color: $blue-green-bgc;
+        }
+    }
+
+    &__service {
+        width: 100%;
+    }
+
+    &__left-column {
+        transform-origin: 0;
+    }
+
+    &__right-column {
+        transform-origin: 100%;
+    }
+
+    &__left-column,
+    &__right-column {
+        transform: scaleX(0);
+        transition: transform 1.5s ease;
+
+        &--show-column {
+            transform: scaleX(1);
+        }
+    }
+
+    @include mediaQuery(mobileXMedium) {
+        &__left-column,
+        &__right-column {
+            width: 45%;
+        }
+    }
+}
