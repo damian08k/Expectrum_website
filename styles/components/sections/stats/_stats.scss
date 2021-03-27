@@ -1,0 +1,34 @@
+.stats {
+    @include addFlex();
+    flex-wrap: wrap;
+    padding: $bsc-padding * 2 $bsc-padding;
+
+    &__icon-container,
+    &__number,
+    &__text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    &__number,
+    &__text {
+        color: white;
+    }
+
+    &__icon {
+        width: 70px;
+        height: 50px;
+    }
+
+    &__number {
+        padding: $bsc-padding 0;
+        font-size: 4rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
