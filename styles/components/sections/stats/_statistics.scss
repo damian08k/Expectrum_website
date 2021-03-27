@@ -6,5 +6,15 @@
 
     &__stats-container {
         background-color: rgba($black-color, 0.5);
+
+        @include mediaQuery(mobileXMedium) {
+            @include addFlex();
+        }
+    }
+
+    @include mediaQuery(mobileXMedium) {
+        @include addFlex();
+        height: 400px;
+        background-image: url("/assets/images/desktop_stats_bg.jpg");
     }
 }

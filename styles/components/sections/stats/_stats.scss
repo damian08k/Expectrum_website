@@ -31,4 +31,8 @@
         letter-spacing: 2px;
         text-transform: uppercase;
     }
+
+    @include mediaQuery(mobileXMedium) {
+        padding: $bsc-padding * 2 0;
+    }
 }
