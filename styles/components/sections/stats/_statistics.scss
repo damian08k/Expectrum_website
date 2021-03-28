@@ -3,12 +3,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     &__stats-container {
         background-color: rgba($black-color, 0.5);
 
         @include mediaQuery(mobileXMedium) {
             @include addFlex();
+            max-width: 900px;
         }
     }
 
