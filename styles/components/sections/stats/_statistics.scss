@@ -1,0 +1,22 @@
+.statistics {
+    background-image: url("/assets/images/mobile_stats_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &__stats-container {
+        background-color: rgba($black-color, 0.5);
+
+        @include mediaQuery(mobileXMedium) {
+            @include addFlex();
+            max-width: 900px;
+        }
+    }
+
+    @include mediaQuery(mobileXMedium) {
+        @include addFlex();
+        height: 400px;
+        background-image: url("/assets/images/desktop_stats_bg.jpg");
+    }
+}
