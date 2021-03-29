@@ -1,0 +1,16 @@
+.pricing {
+    @include addFlex();
+    margin: $bsc-margin * 5 0;
+
+    &__heading {
+        flex-basis: 100%;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__pricing-plan {
+        width: 250px;
+    }
+}
