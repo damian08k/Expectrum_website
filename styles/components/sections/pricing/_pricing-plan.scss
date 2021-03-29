@@ -1,0 +1,81 @@
+.pricing-plan {
+    margin-top: $bsc-margin * 4;
+    text-align: center;
+
+    &__buy-button,
+    &__element-name,
+    &__cycle,
+    &__subtitle {
+        text-transform: capitalize;
+    }
+
+    &__title-container {
+        border-bottom: 1px solid rgba($white-color, 0.5);
+        background-color: $black-bgc;
+        text-transform: uppercase;
+    }
+
+    &__price-container {
+        background-color: $black-grey-bgc;
+    }
+
+    &__title-container,
+    &__price-container,
+    &__buy-button {
+        color: $white-color;
+
+        &--add-blue-green-bgc {
+            background-color: $blue-green-bgc;
+        }
+    }
+
+    &__button-container {
+        background-color: darken($color: $white-color, $amount: 20%);
+    }
+
+    &__title {
+        padding: $bsc-padding * 2 0 $bsc-padding / 2;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    &__subtitle {
+        padding: $bsc-padding / 2 0 $bsc-padding * 2;
+        font-size: 1.5rem;
+        font-weight: normal;
+
+        &--no-capitalize {
+            text-transform: initial;
+        }
+    }
+
+    &__price {
+        padding: $bsc-padding * 1.5 0 $bsc-padding / 2;
+        font-size: 1.8rem;
+    }
+
+    &__cycle {
+        padding: $bsc-padding / 2 0 $bsc-padding * 1.5;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    &__element {
+        background-color: darken($color: $white-color, $amount: 5%);
+
+        &:nth-of-type(even) {
+            background-color: darken($color: $white-color, $amount: 10%);
+        }
+    }
+
+    &__element-name {
+        padding: $bsc-padding * 2 0;
+        font-size: 1.5rem;
+    }
+
+    &__buy-button {
+        &--add-blue-green-bgc {
+            border-color: $blue-green-bgc;
+        }
+    }
+}
