@@ -1,0 +1,14 @@
+.opinions {
+    padding: $bsc-padding * 4 $bsc-padding;
+    background-color: $blue-green-bgc;
+
+    &__container {
+        @include addFlex();
+    }
+
+    &__slider {
+    }
+
+    &__become-client {
+    }
+}

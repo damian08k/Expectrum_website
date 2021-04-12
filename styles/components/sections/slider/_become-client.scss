@@ -1,0 +1,30 @@
+.become-client {
+    & > *,
+    &__phone-number {
+        color: $white-color;
+    }
+
+    &__text {
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__call-us {
+        padding-top: $bsc-padding * 2;
+        font-size: 2.5rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &__phone-number {
+        text-decoration: none;
+        transition: color 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+            color: $black-color;
+        }
+    }
+}
