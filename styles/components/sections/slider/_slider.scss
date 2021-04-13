@@ -1,5 +1,15 @@
 .slider {
-    display: none;
+    // 800px and > slider is set to active
+    padding: $bsc-padding * 2 0;
+    background-color: rgba($black-color, 0.5);
+
+    &--active {
+        display: flex;
+    }
+
+    &--disable {
+        display: none;
+    }
 
     &__left-arrow {
     }
@@ -8,23 +18,68 @@
     }
 
     &__slider-elements-container {
+        @include addFlex();
+        flex-wrap: wrap;
+        max-width: 700px;
     }
 
     &__client-photo-container {
+        width: 75px;
+        height: 75px;
     }
 
     &__client-photo {
+        width: 100%;
     }
 
     &__blockquote {
+        flex-basis: 100%;
+        padding: $bsc-padding * 2 0 0;
+        color: $white-color;
     }
 
     &__client-opinion {
     }
 
     &__client-opinion-quote {
+        padding: 0 $bsc-padding;
+        line-height: 1.7;
+        font-size: 1.7rem;
+        text-align: center;
     }
 
     &__client-opinion-client-name {
+        padding: $bsc-padding * 2 0 0;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+.arrow {
+    @include addFocus(1px);
+    height: 40px;
+    background-color: $white-color;
+    border: none;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        display: block;
+        border: 10px solid $black-color;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    &--right {
+        &::after {
+            transform: translateX(30%) rotate(-90deg);
+        }
+    }
+
+    &--left {
+        &::after {
+            transform: translateX(-30%) rotate(90deg);
+        }
     }
 }

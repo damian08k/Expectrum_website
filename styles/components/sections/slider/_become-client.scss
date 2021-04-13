@@ -1,4 +1,6 @@
 .become-client {
+    padding-top: $bsc-padding * 2;
+
     & > *,
     &__phone-number {
         color: $white-color;

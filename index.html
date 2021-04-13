@@ -486,11 +486,17 @@
             </section>
             <section class="opinions">
                 <div class="content-container opinions__container">
-                    <div class="opinions__slider slider">
-                        <div class="slider__left-arrow"></div>
+                    <div class="opinions__slider slider slider--active">
+                        <div class="slider__left-arrow">
+                            <button class="arrow arrow--left" aria-label="Change client opinion to other"></button>
+                        </div>
                         <div class="slider__slider-elements-container">
                             <div class="slider__client-photo-container">
-                                <img src="" alt="" class="slider__client-photo" />
+                                <img
+                                    src="./assets/images/client-slider.png"
+                                    alt="Face photo of our client Chad Sugg"
+                                    class="slider__client-photo"
+                                />
                             </div>
                             <div class="slider__blockquote">
                                 <blockquote class="slider__client-opinion">
@@ -504,7 +510,9 @@
                                 <p class="slider__client-opinion-client-name">- Chad Sugg</p>
                             </div>
                         </div>
-                        <div class="slider__right-arrow"></div>
+                        <div class="slider__right-arrow">
+                            <button class="arrow arrow--right" aria-label="Change client opinion to other"></button>
+                        </div>
                     </div>
                     <div class="opinions__become-client become-client">
                         <h2 class="become-client__text">Become our next client</h2>
