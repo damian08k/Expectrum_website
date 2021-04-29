@@ -43,7 +43,7 @@ const pauseIntervalAfterClickSliderButtons = () => {
 };
 
 const nextSlide = () => {
-    if (sliderCounter > slides.length - 1) return;
+    if (sliderCounter >= slides.length - 1) return;
     sliderCounter++;
     addTransformAndTransitionToSlider(sliderCounter);
 };
