@@ -1,0 +1,19 @@
+.post {
+    padding: $bsc-padding * 2 $bsc-padding;
+    max-width: 430px;
+    border: 1px solid darken($color: $white-color, $amount: 20%);
+
+    &__date {
+        font-size: 1.5rem;
+    }
+
+    &__title {
+        padding: $bsc-padding * 1.5 0;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
+}
