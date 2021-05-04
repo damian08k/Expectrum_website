@@ -3,6 +3,46 @@
     max-width: 430px;
     border: 1px solid darken($color: $white-color, $amount: 20%);
 
+    position: relative;
+
+    @include mediaQuery(mobileLarge) {
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 10px);
+            left: calc(100% - 10px);
+            width: 20px;
+            height: 20px;
+            border: 1px solid darken($color: $white-color, $amount: 20%);
+            border-left: 1px solid transparent;
+            border-top: 1px solid transparent;
+            transform: rotate(-45deg);
+            background-color: $white-color;
+        }
+    }
+
+    &__icon {
+        display: none;
+        width: 50px;
+        height: 50px;
+        background-image: url("../../../../assets/images/link.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        border: 1px solid $black-color;
+        border-radius: 50%;
+        background-color: $black-color;
+        color: $white-color;
+        text-align: center;
+
+        @include mediaQuery(mobileLarge) {
+            display: block;
+            position: absolute;
+            top: calc(50% - 25px);
+            left: calc(100% + 50px);
+        }
+    }
+
     &__date {
         font-size: 1.5rem;
     }
