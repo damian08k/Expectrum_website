@@ -635,7 +635,63 @@
                     </div>
                 </div>
             </section>
+            <section class="contact">
+                <div class="contact__address">
+                    <h2 class="contact__title">Contact</h2>
+                    <address class="contact__company-address address">
+                        <p class="address__street">Tucson 5301 E Grant Rd</p>
+                        <a href="tel:+3493769275" class="address__phone-number">(088) 347 281</a>
+                    </address>
+                </div>
+                <div class="contact__form-container">
+                    <form class="contact__form contact-form" data-contactForm>
+                        <fieldset class="contact-form__fieldset">
+                            <legend class="contact-form__title">
+                                Say <span class="contact-form__title-special-word">Hello</span>
+                            </legend>
+                            <div class="contact-form__form-elements">
+                                <input
+                                    type="text"
+                                    class="contact-form__form-input"
+                                    placeholder="Name *"
+                                    aria-label="Put your name here"
+                                    minlength="0"
+                                    maxlength="15"
+                                    required
+                                    data-contactInput
+                                />
+                                <input
+                                    type="email"
+                                    class="contact-form__form-input"
+                                    placeholder="E-mail *"
+                                    aria-label="Put your e-mail address here"
+                                    required
+                                    data-contactInput
+                                />
+                                <textarea
+                                    cols="30"
+                                    rows="10"
+                                    class="contact-form__message"
+                                    placeholder="Message *"
+                                    maxlength="5000"
+                                    required
+                                    data-message
+                                ></textarea>
+                                <p class="contact-form__sign-counter">
+                                    <span class="contact-form__current-signs" data-signs="current">0</span>
+                                    /
+                                    <span class="contact-form__max-signs" data-signs="max">0</span>
+                                </p>
+                            </div>
+                            <button type="submit" class="contact-form__submit-button button-default">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <p class="footer__text">&copy; Expertum 2011 - 2021</p>
+        </footer>
         <script src="./js/script.js" defer></script>
         <script src="./js/forms.js" defer></script>
         <script src="./js/services.js" defer></script>

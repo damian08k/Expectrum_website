@@ -1,0 +1,11 @@
+.footer {
+    @include addFlex();
+    padding: $bsc-padding * 1.5;
+    width: 100%;
+    background-color: $footer-bgc;
+
+    &__text {
+        font-size: 1.4rem;
+        color: darken($color: $white-color, $amount: 30%);
+    }
+}

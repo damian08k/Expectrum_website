@@ -1,0 +1,28 @@
+.address {
+    font-size: 3rem;
+
+    @include mediaQuery(mobileLarge) {
+        max-width: 320px;
+    }
+
+    &__street {
+        padding: $bsc-padding 0;
+        font-style: normal;
+
+        &::before,
+        &::after {
+            content: "";
+            margin: $bsc-margin 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $white-color;
+        }
+    }
+
+    &__phone-number {
+        font-style: normal;
+        text-decoration: none;
+        color: $white-color;
+    }
+}
