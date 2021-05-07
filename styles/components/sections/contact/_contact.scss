@@ -1,0 +1,35 @@
+.contact {
+    @include addFlex();
+    flex-wrap: wrap;
+
+    &__address,
+    &__form-container {
+        padding: $bsc-padding * 3 $bsc-padding * 2;
+        flex-basis: 100%;
+    }
+
+    &__title,
+    &__company-address {
+        color: $white-color;
+    }
+
+    &__address {
+        background-color: $black-grey-bgc;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__company-address {
+    }
+
+    &__form-container {
+        background-color: $blue-green-bgc;
+    }
+
+    &__form {
+    }
+}

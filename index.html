@@ -635,7 +635,50 @@
                     </div>
                 </div>
             </section>
-            <section class="contact"></section>
+            <section class="contact">
+                <div class="contact__address">
+                    <h2 class="contact__title">Contact</h2>
+                    <address class="contact__company-address address">
+                        <p class="address__street">Tucson 5301 E Grant Rd</p>
+                        <a href="tel:+3493769275" class="address__phone-number">(088) 347 281</a>
+                    </address>
+                </div>
+                <div class="contact__form-container">
+                    <form class="contact__form contact-form">
+                        <fieldset class="contact-form__fieldset">
+                            <legend class="contact-form__title">
+                                Say <span class="contact-form__title-special-word">Hello</span>
+                            </legend>
+                            <div class="contact-form__form-elements">
+                                <input
+                                    type="text"
+                                    class="contact-form__form-input"
+                                    placeholder="Name *"
+                                    aria-label="Put your name here"
+                                    minlength="0"
+                                    maxlength="15"
+                                    required
+                                />
+                                <input
+                                    type="email"
+                                    class="contact-form__form-input"
+                                    placeholder="E-mail *"
+                                    aria-label="Put your e-mail address here"
+                                    required
+                                />
+                                <textarea
+                                    cols="30"
+                                    rows="10"
+                                    class="contact-form__message"
+                                    placeholder="Message *"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="contact-form__submit-button button-default">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
         </main>
         <script src="./js/script.js" defer></script>
         <script src="./js/forms.js" defer></script>
