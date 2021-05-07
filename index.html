@@ -644,7 +644,7 @@
                     </address>
                 </div>
                 <div class="contact__form-container">
-                    <form class="contact__form contact-form">
+                    <form class="contact__form contact-form" data-contactForm>
                         <fieldset class="contact-form__fieldset">
                             <legend class="contact-form__title">
                                 Say <span class="contact-form__title-special-word">Hello</span>
@@ -658,6 +658,7 @@
                                     minlength="0"
                                     maxlength="15"
                                     required
+                                    data-contactInput
                                 />
                                 <input
                                     type="email"
@@ -665,14 +666,22 @@
                                     placeholder="E-mail *"
                                     aria-label="Put your e-mail address here"
                                     required
+                                    data-contactInput
                                 />
                                 <textarea
                                     cols="30"
                                     rows="10"
                                     class="contact-form__message"
                                     placeholder="Message *"
+                                    maxlength="500"
                                     required
+                                    data-message
                                 ></textarea>
+                                <p class="contact-form__sign-counter">
+                                    <span class="contact-form__current-signs" data-signs="current">0</span>
+                                    /
+                                    <span class="contact-form__max-signs" data-signs="max">0</span>
+                                </p>
                             </div>
                             <button type="submit" class="contact-form__submit-button button-default">Send</button>
                         </fieldset>

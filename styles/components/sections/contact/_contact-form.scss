@@ -16,6 +16,9 @@
         @include addFlex();
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include mediaQuery(mobileLarge) {
+        }
     }
 
     &__form-input {
@@ -32,6 +35,14 @@
         &:nth-of-type(2) {
             margin-bottom: $bsc-margin * 2;
         }
+
+        @include mediaQuery(mobileLarge) {
+            flex-basis: 48%;
+
+            &:nth-of-type(2) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__message {
@@ -39,6 +50,14 @@
         flex-basis: 100%;
         border: 1px solid $black-color;
         border-radius: 5px;
+        resize: none;
+    }
+
+    &__sign-counter {
+        padding-right: $bsc-padding / 5;
+        width: 100%;
+        text-align: right;
+        color: $white-color;
     }
 
     &__submit-button {

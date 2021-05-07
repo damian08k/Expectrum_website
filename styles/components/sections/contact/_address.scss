@@ -1,6 +1,10 @@
 .address {
     font-size: 3rem;
 
+    @include mediaQuery(mobileLarge) {
+        max-width: 320px;
+    }
+
     &__street {
         padding: $bsc-padding 0;
         font-style: normal;

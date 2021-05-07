@@ -6,6 +6,15 @@
     &__form-container {
         padding: $bsc-padding * 3 $bsc-padding * 2;
         flex-basis: 100%;
+
+        @include mediaQuery(mobileXMedium) {
+            flex-basis: 50%;
+            height: 485px;
+        }
+
+        @include mediaQuery(mobileLarge) {
+            height: 415px;
+        }
     }
 
     &__title,
@@ -16,6 +25,10 @@
     &__address {
         background-color: $black-grey-bgc;
         text-align: center;
+
+        @include mediaQuery(mobileLarge) {
+            text-align: left;
+        }
     }
 
     &__title {
