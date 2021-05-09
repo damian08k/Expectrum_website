@@ -1,5 +1,7 @@
 .become-client {
-    padding-top: $bsc-padding * 2;
+    @include mediaQuery(mobileXMedium) {
+        padding-top: $bsc-padding * 2;
+    }
 
     & > *,
     &__phone-number {
