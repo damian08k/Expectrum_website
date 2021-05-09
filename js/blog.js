@@ -58,22 +58,24 @@ const createPost = () => {
     return postContaier;
 };
 
-const scrollToBlogSectionEnd = () => {
-    const blogSection = document.querySelector("[data-blog]");
-    const blogSectionEnd = blogSection.getBoundingClientRect().bottom;
+const scrollToBlogSectionEnd = oldButtonPositionFromTop => {
+    let newButtonPositionFromTop = morePostsButton.getBoundingClientRect().top;
+
+    const scrollValue = newButtonPositionFromTop - oldButtonPositionFromTop;
 
     window.scrollBy({
-        top: blogSectionEnd,
+        top: scrollValue,
         behavior: "smooth",
     });
 };
 
 const showMorePosts = () => {
+    let oldButtonPositionFromTop = morePostsButton.getBoundingClientRect().top;
     const post = createPost();
     post.style.opacity = 0;
     postsContainer.insertBefore(post, morePostsButton);
     createNewPostAnimation(post);
-    scrollToBlogSectionEnd();
+    scrollToBlogSectionEnd(oldButtonPositionFromTop);
 };
 
 morePostsButton.addEventListener("click", showMorePosts);
