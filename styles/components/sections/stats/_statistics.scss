@@ -1,5 +1,5 @@
 .statistics {
-    background-image: url("./assets/images/mobile_stats_bg.png");
+    background-image: url("./../assets/images/mobile_stats_bg.png");
     @include addBackgroundProperties();
 
     &__stats-container {
@@ -14,6 +14,6 @@
     @include mediaQuery(mobileXMedium) {
         @include addFlex();
         height: 400px;
-        background-image: url("./assets/images/desktop_stats_bg.jpg");
+        background-image: url("./../assets/images/desktop_stats_bg.jpg");
     }
 }

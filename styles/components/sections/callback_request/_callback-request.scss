@@ -1,11 +1,11 @@
 .callback-request {
     @include addFlex();
     height: 600px;
-    background-image: url("./../../../../assets/images/mobile_s1_bg.jpg");
+    background-image: url("./../assets/images/mobile_s1_bg.jpg");
     @include addBackgroundProperties();
 
     @include mediaQuery(mobileLarge) {
-        background-image: url("./../../../../assets/images/desktop_s1_bg.jpg");
+        background-image: url("./../assets/images/desktop_s1_bg.jpg");
     }
 
     &__background {
