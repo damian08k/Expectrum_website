@@ -56,6 +56,8 @@
         &:nth-of-type(2) {
             margin: $bsc-margin * 2 0;
         }
+
+        @include addFocus(1px);
     }
 
     &__form-submit-btn {

@@ -36,6 +36,8 @@
             margin-bottom: $bsc-margin * 2;
         }
 
+        @include addFocus(1px);
+
         @include mediaQuery(mobileLarge) {
             flex-basis: 48%;
 
@@ -51,10 +53,12 @@
         border: 1px solid $black-color;
         border-radius: 5px;
         resize: none;
+
+        @include addFocus(1px);
     }
 
     &__sign-counter {
-        padding-right: $bsc-padding / 5;
+        padding: $bsc-padding / 2 $bsc-padding / 5 0 0;
         width: 100%;
         text-align: right;
         color: $white-color;
