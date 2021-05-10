@@ -5,8 +5,13 @@ menuElements.forEach(menuElement => {
     menuElement.addEventListener("click", evt => {
         evt.preventDefault();
 
-        document.querySelector(evt.target.getAttribute("href")).scrollIntoView({
-            block: "center",
+        const clickedMenuElement = document.querySelector(evt.target.getAttribute("href"));
+        const sectionMarginTopAndBottom = -100;
+        const scrollTopValue =
+            clickedMenuElement.getBoundingClientRect().top + window.pageYOffset + sectionMarginTopAndBottom;
+
+        window.scrollTo({
+            top: scrollTopValue,
             behavior: "smooth",
         });
     });
