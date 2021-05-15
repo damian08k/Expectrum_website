@@ -15,6 +15,13 @@ The main goals of creating that website were to learn more about:
 That website is based on a free website template that is available on the Internet.
 I didn't change sections and content, but I added some mine features (e.g., functional "Blog" section).
 
+# Technologies 
+Technologies I used for creating that website:
+
+- HTML5 (with BEM methodology)
+- SASS (SCSS)
+- Vanilla JS
+
 # Demo
 
 Here you can find a link to GitHub Pages, where I hosted page:
