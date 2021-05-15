@@ -2,7 +2,7 @@
     padding-left: $bsc-padding;
 
     &__link {
-        @include addFocus(1px);
+        @include addFocus(0px);
     }
 
     &__image {
