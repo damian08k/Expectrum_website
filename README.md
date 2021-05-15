@@ -17,5 +17,5 @@ I didn't change sections and content, but I added some mine features (e.g., func
 
 # Demo
 
-Here you can find alink to GitHub Pages, where I hosted page:
+Here you can find a link to GitHub Pages, where I hosted page:
 <https://damian08k.github.io/Expertum_website/>
